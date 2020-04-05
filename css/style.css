@@ -18,6 +18,10 @@ p {
     margin: 0;
 }
 
+p:nth-of-type(1) {
+    margin-top: 0;
+}
+
 .container {
     width: 1280px;
     margin: 0 auto;
@@ -29,7 +33,7 @@ p {
     color: #fff;
     font-family: Arial;
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -111,8 +115,19 @@ p {
     min-height: 345px;
 }
 
+.about-product:after {
+content: "";
+display: block;
+width: 100%;
+clear: both;
+}
+
 .about-product p {
     margin: 15px 0 0 0;
+}
+
+.about-product p:nth-of-type(1) {
+    margin: 0;
 }
 
 .center-header {
@@ -205,6 +220,14 @@ p {
     min-height: 495px;
 }
 
+
+.screenshots:after {
+content: "";
+display: block;
+width: 100%;
+clear: both;
+}
+
 .screenshot-figure-left {
     float: left;
     width: 50%;
@@ -212,7 +235,7 @@ p {
     margin: 0 0 30px 0;
 }
 
-.screenshot-figure-left:nth-last-of-type(1) {
+.screenshot-figure-left:nth-last-of-type(2) {
     margin: 0;
 }
 
@@ -450,7 +473,6 @@ input {
     min-height: 40px;
     border-radius: 5px;
     margin-bottom: 20px;
-    outline: none;
     padding: 10px;
     font-family: Arial;
     font-size: 16px;
@@ -459,10 +481,24 @@ input {
     color: #445162;
     outline: 0;
     border: 0;
+    resize: none;
 }
 
-input[name=message] {
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #445162;
+    outline: 0;
+    border: 0;
     min-height: 170px;
+    
 }
 
 input[type=submit] {
@@ -520,6 +556,38 @@ input:-ms-input-placeholder {
     color: #445162;
 }
 
+textarea::-webkit-input-placeholder {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #445162;
+}
+
+textarea::-moz-placeholder {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #445162;
+}
+
+textarea:-moz-placeholder {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #445162;
+}
+
+textarea:-ms-input-placeholder {
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #445162;
+}
+
 .contact-info {
     width: 240px;
     float: right;
@@ -540,19 +608,19 @@ input:-ms-input-placeholder {
 }
 
 .contact-data1 {
-    background-image: url("/img/contacts/skype_icon.png");
+    background-image: url("../img/contacts/skype_icon.png");
 }
 
 .contact-data2 {
-    background-image: url("/img/contacts/icq_icon.png");
+    background-image: url("../img/contacts/icq_icon.png");
 }
 
 .contact-data3 {
-    background-image: url("/img/contacts/email_icon.png");
+    background-image: url("../img/contacts/email_icon.png");
 }
 
 .contact-data4 {
-    background-image: url("/img/contacts/phone_icon.png");
+    background-image: url("../img/contacts/phone_icon.png");
 }
 
 .contacts-social {
@@ -569,23 +637,23 @@ input:-ms-input-placeholder {
 }
 
 .social1 {
-    background-image: url("/img/contacts/social_button_1.png");
+    background-image: url("../img/contacts/social_button_1.png");
 }
 
 .social2 {
-    background-image: url("/img/contacts/social_button_2.png");
+    background-image: url("../img/contacts/social_button_2.png");
 }
 
 .social3 {
-    background-image: url("/img/contacts/social_button_3.png");
+    background-image: url("../img/contacts/social_button_3.png");
 }
 
 .social4 {
-    background-image: url("/img/contacts/social_button_4.png");
+    background-image: url("../img/contacts/social_button_4.png");
 }
 
 .social5 {
-    background-image: url("/img/contacts/social_button_5.png");
+    background-image: url("../img/contacts/social_button_5.png");
 }
 
 .copyright {
